@@ -1,7 +1,7 @@
   import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
   import { dracula } from 'react-syntax-highlighter/dist/esm/styles/prism'; 
   import {CopyToClipboard} from 'react-copy-to-clipboard';
-  import { Fragment, useEffect, useState } from 'react';
+  import { Fragment, useState } from 'react';
   const Code = ({code,language}) => {
     const [copy,setCopy] = useState({
       value: '',
@@ -22,7 +22,7 @@
 
     return (
     <Fragment>
-    {copy.show && <p className='w-full bg-green-200 text-green-500 font-medium h-16 '>
+    {copy.show && <p className='w-full bg-green-100 text-green-700 font-medium h-8 text-center flex items-center justify-center '>
         copied
       </p>
 
