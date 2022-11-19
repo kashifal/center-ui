@@ -11,7 +11,7 @@ const Layout = () => {
       <Overlay />
       <Modal />
       <div className='grid grid-cols-5 h-auto   overflow-hidden w-full'>
-        <div className='w-full  top-0 left-0  scroll-smooth  col-span-1 border-r-[1px] bg-purple-700 border-purple-700 h-[100vh]'>
+        <div className='w-full  top-0 left-0   scroll-smooth  col-span-1 border-r-[1px] bg-purple-700 border-purple-700 h-[100vh]'>
           {Links.map((item, index) => (
             <Link key={index} to={item.path}>
               {" "}
@@ -24,9 +24,9 @@ const Layout = () => {
           <br />
           <Outlet />
         </div>
-      </div>
-    </Fragment>
-  );
-};
+        </div>
+      </Fragment>
+    );
+  };
 
-export default Layout;
+  export default Layout;

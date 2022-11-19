@@ -1,20 +1,28 @@
-import React, { Fragment } from "react";
+import React, { Fragment, useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { ModalAction } from "../../app/slices/ModalSlice";
+import ModalSlice from "../../app/slices/ModalSlice";
 
 const Header = () => {
+  const dispatch = useDispatch();
+  
+  console.log(ModalAction);
+ 
+ 
   return (
-    <Fragment>
+    <Fragment> 
       <div className='h-16 w-full shadow-sm'>
-        <div className='h-full max-w-5xl m-auto flex items-center'>
+        <div className='h-full w-full px-6  flex items-center'>
           <div className='flex-1  h-full flex items-center'>
-            <div className='group flex w-2/3 items-center gap-2 py-2 px-3 cursor-pointer'>
-              <div className='rounded-full group-hover:text-primary'>
+            <div onClick={() => dispatch(ModalAction.openModal(true))} className='group bg-gray-50 ring-1 ring-gray-100 rounded-full flex w-2/3 items-center gap-2 py-2 px-3 cursor-pointer'>
+              <div className='rounded-full  group-hover:text-primary'>
                 <svg
                   xmlns='http://www.w3.org/2000/svg'
                   fill='none'
                   viewBox='0 0 24 24'
                   strokeWidth={1.5}
                   stroke='currentColor'
-                  className='w-5 h-5'
+                  className='w-5 h-5 text-secondary'
                 >
                   <path
                     strokeLinecap='round'
@@ -24,10 +32,12 @@ const Header = () => {
                 </svg>
               </div>
               <hr />
-              <span className='group-hover:text-primary'>
+              <span className='group-hover:text-primary text-secondary font-light'>
                 Search components
               </span>
-            </div>
+
+       
+            
           </div>
           <div className='w-96 h-full flex items-center justify-end gap-6'>
             <a href='' className=''>
@@ -80,12 +90,13 @@ const Header = () => {
             </button>
             <a
               href='/'
-              className='px-3 py-[6px] bg-primary text-white rounded-full text-sm font-semibold'
+              className='px-6 py-2 bg-primary font-normal text-white rounded-full text-sm'
             >
               Hire us
             </a>
           </div>
         </div>
+      </div>
       </div>
     </Fragment>
   );
