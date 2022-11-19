@@ -1,0 +1,13 @@
+import React from "react";
+import { Link } from "react-router-dom";
+function NavLink({ children, to }) {
+  return (
+    <Link
+      to={to}
+      className='py-2 px-3 rounded-full hover:bg-[#e4defc] transition-all'
+    >
+      {children}
+    </Link>
+  );
+}
+export default NavLink;
