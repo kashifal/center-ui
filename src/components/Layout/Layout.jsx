@@ -12,10 +12,13 @@ const Layout = () => {
       <Modal />
       <div className='grid grid-cols-5 h-auto   overflow-hidden w-full'>
         <Sidebar />
-        <div className=' col-span-4 '>
+        <div className=' col-span-4 ml-[25%] w-[100%]'>
           <Header />
           <br />
-          <Outlet />
+          <div className="px-4 ">
+            <Outlet />
+          </div>
+          
         </div>
       </div>
     </Fragment>
