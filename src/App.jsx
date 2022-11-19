@@ -4,7 +4,7 @@ import Header from "./components/Header/Header";
 import About from "./routes/About";
 import { Route, Routes } from "react-router-dom";
 import Home from "./routes/Home/Home";
-import Layout from "./components/Sidebar/Layout";
+import Layout from "./components/Layout/Layout";
 const App = () => {
   return (
     <Fragment>
