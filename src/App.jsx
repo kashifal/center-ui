@@ -5,7 +5,6 @@ import About from "./routes/About";
 import { Route, Routes } from "react-router-dom";
 import Home from "./routes/Home/Home";
 import Layout from "./components/Sidebar/Layout";
-
 const App = () => {
   return (
     <Fragment>
