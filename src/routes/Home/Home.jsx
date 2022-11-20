@@ -1,6 +1,6 @@
 import React, { Fragment } from "react";
 import Badge from "../../components/badge/Badge";
-import Button from "../../components/Button/Button"; 
+import Button from "../../components/Button/Button";
 const Home = () => {
   return (
     <Fragment>
@@ -10,13 +10,12 @@ const Home = () => {
             We <b className='text-primary'>designed a library</b> to provide
             companies <br /> a complete UI solution.
           </h1>
-          <p className="text-left">
+          <p className='text-left'>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error
             fugit ullam, veniam soluta at odit accusantium excepturi dolores.
             Amet a molestias reiciendis, est nihil laboriosam libero atque
             aliquid quis voluptatem.
           </p>
-           
         </div>
         <br />
         <br />
