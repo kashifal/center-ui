@@ -5,6 +5,7 @@ function Modal() {
   const isOpen = useSelector((state) => state.ModalSlice.isOpen);
   return (
     <div
+    style={{zIndex:'10000'}}
       className={`absolute ml-auto mr-auto left-0 right-0 top-0 ${
         isOpen ? "flex" : "hidden"
       }  bottom-0 mt-16 mb-auto bg-white h-[400px] w-[750px] rounded-lg p-5  flex-col`}
