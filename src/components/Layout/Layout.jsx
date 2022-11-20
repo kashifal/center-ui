@@ -10,15 +10,19 @@ const Layout = () => {
     <Fragment>
       <Overlay />
       <Modal />
-      <div className='grid grid-cols-5 h-auto   overflow-hidden w-full'>
+      <div className="grid grid-cols-5 h-auto   overflow-hidden w-full">
         <Sidebar />
-        <div className=' col-span-4 ml-[25%] w-[100%]'>
+        <div className=" col-span-4 ml-[25%] w-[100%]">
           <Header />
-          <br />
-          <div className="px-4 ">
-            <Outlet />
+
+          <div className="   h-auto w-[75%] relative flex z-50">
+            <div className="px-4 py-12">
+              <Outlet />
+            </div>
+            <div className="  w-[20%] right-0 z-10 h-screen fixed mt-0 top-16">
+               
+            </div>
           </div>
-          
         </div>
       </div>
     </Fragment>
