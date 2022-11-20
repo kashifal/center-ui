@@ -91,7 +91,7 @@ const Header = () => {
                 href='/'
                 className='px-6 py-2 bg-primary font-normal text-white rounded-full text-sm'
               >
-                Request new component
+                Hire us
               </a>
             </div>
           </div>
