@@ -13,7 +13,7 @@ function Modal() {
   return (
     <div
       style={{ zIndex: "10000" }}
-      className={`absolute ml-auto mr-auto left-0 right-0 top-0 ${
+      className={`fixed ml-auto mr-auto left-0 right-0 top-0 ${
         isOpen ? "flex" : "hidden"
       }  bottom-0 mt-16 mb-auto bg-white h-[400px] w-[750px] rounded-lg p-5  flex-col`}
     >

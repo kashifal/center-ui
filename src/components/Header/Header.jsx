@@ -5,14 +5,13 @@ import ModalSlice from "../../app/slices/ModalSlice";
 
 const Header = () => {
   const dispatch = useDispatch();
-
-  console.log(ModalAction);
+ 
 
   return (
     <Fragment>
-      <div className='h-16 w-full shadow-sm'>
+      <div className='h-16    bg-white w-[80%] shadow-sm fixed' style={{zIndex:'100'}}>
         <div className='h-full w-full px-6  flex items-center'>
-          <div className='flex-1  h-full flex items-center'>
+          <div className='flex-1  h-full flex items-center justify-between'>
             <div
               onClick={() => dispatch(ModalAction.openModal(true))}
               className='group bg-gray-50 ring-1 ring-gray-100 rounded-full flex w-2/3 items-center gap-2 py-2 px-3 cursor-pointer'
