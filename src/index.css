@@ -19,6 +19,7 @@ span,
 a,
 label {
   font-family: "Lato", sans-serif;
+  color: #334155;
 }
 ::selection {
   background: #432c7a;
