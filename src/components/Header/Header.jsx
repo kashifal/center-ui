@@ -39,7 +39,7 @@ const Header = () => {
               </span>
             </div>
             <div className='w-96 h-full flex items-center justify-end gap-6'>
-              <a href='' className=''>
+              <a href='https://www.figma.com/file/brqhRQR4ZaWisj8wqq6Wlv/center-ui-team-library?t=A9vWwMM9j61b48Qm-0' className=''>
                 <svg
                   width='20'
                   height='20'
@@ -55,7 +55,7 @@ const Header = () => {
                   ></path>
                 </svg>
               </a>
-              <a href='/'>
+              <a href='https://github.com/kashifal/center-ui'>
                 <svg
                   width='20'
                   height='20'

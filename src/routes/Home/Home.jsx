@@ -1,11 +1,15 @@
-import React from "react";
+
+import React, { Fragment } from "react";
+import Badge from "../../components/badge/Badge";
 
 const Home = () => {
   return (
-    <div>
-      <h1 className='text-5xl font-black'>Home Page</h1>
-      <p>cool</p>
-    </div>
+    <Fragment>
+      <div className="flex items-center justify-center flex-col">
+      <h1 className='text-6xl font-black'>Welcome to cluster-ui 👋</h1>
+      <p className="mt-2 text-xl">Free and Complete Solution for your next <Badge text='UI' /> project.</p>
+      </div> 
+    </Fragment>
   );
 };
 
