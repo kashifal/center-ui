@@ -1,0 +1,25 @@
+const components = [
+  { id: "1", title: "Accordian", path: "/accordian" },
+  { id: "2", title: "Alert", path: "/alert" },
+  { id: "3", title: "Avatar", path: "avatar" },
+  { id: "4", title: "Breadcrumbs", path: "breadcrumbs" },
+  { id: "5", title: "Button", path: "button" },
+  { id: "6", title: "Card", path: "card" },
+  { id: "7", title: "Checkbox", path: "checkbox" },
+  { id: "8", title: "Chip", path: "chip" },
+  { id: "9", title: "Dialog", path: "dialog" },
+  { id: "10", title: "Icon Button", path: "icon-button" },
+  { id: "11", title: "Input", path: "input" },
+  { id: "12", title: "Menu", path: "/menu" },
+  { id: "13", title: "Navbar", path: "navbar" },
+  { id: "14", title: "Popover", path: "popover" },
+  { id: "15", title: "Progress Bar", path: "progress-bar" },
+  { id: "16", title: "Radio Button", path: "radio-button" },
+  { id: "17", title: "Select", path: "select" },
+  { id: "18", title: "Switch", path: "switch" },
+  { id: "19", title: "Tabs", path: "tabs" },
+  { id: "20", title: "Textarea", path: "textarea" },
+  { id: "21", title: "Tooltip", path: "tooltip" },
+];
+
+export default components;
