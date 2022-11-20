@@ -6,7 +6,13 @@ function Overlay() {
   const dispatch = useDispatch();
    const isOpen = useSelector((state) =>  state.ModalSlice.isOpen);
   return (
-    <div onClick={() => dispatch(ModalAction.openModal(false))} className={`w-full h-screen ${isOpen ? 'block' : 'hidden'} absolute top-0 bg-black/10 backdrop-blur-sm`}></div>
+    <div
+      style={{ zIndex: "1000" }}
+      onClick={() => dispatch(ModalAction.openModal(false))}
+      className={`w-full h-screen ${
+        isOpen ? "block" : "hidden"
+      } absolute top-0 bg-black/10 backdrop-blur-sm`}
+    ></div>
   );
 }
 
