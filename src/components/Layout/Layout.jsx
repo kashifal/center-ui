@@ -15,12 +15,12 @@ const Layout = () => {
         <div className=" col-span-4 ml-[25%] w-[100%]">
           <Header />
 
-          <div className="   h-auto w-[75%] relative flex z-50">
-            <div className="px-4 py-12">
+          <div className=" top-16   h-auto w-[75%] relative flex z-50">
+            <div className="px-4   py-12">
               <Outlet />
             </div>
-            <div className="  w-[20%] right-0 z-10 h-screen fixed mt-0 top-16">
-               
+            <div className="  w-[20%]  right-0 z-10 px-6 py-8 h-screen fixed mt-0 top-16">
+               <span>Art of knowing nothing!!!</span>
             </div>
           </div>
         </div>

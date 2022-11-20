@@ -5,12 +5,11 @@ import ModalSlice from "../../app/slices/ModalSlice";
 
 const Header = () => {
   const dispatch = useDispatch();
-
-  console.log(ModalAction);
+ 
 
   return (
     <Fragment>
-      <div className='h-16 w-full shadow-sm'>
+      <div className='h-16 bg-white z-50 w-full shadow-sm fixed' style={{zIndex:'100000'}}>
         <div className='h-full w-full px-6  flex items-center'>
           <div className='flex-1  h-full flex items-center'>
             <div
