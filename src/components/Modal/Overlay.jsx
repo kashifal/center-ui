@@ -11,7 +11,7 @@ function Overlay() {
       onClick={() => dispatch(ModalAction.openModal(false))}
       className={`w-full h-screen ${
         isOpen ? "block" : "hidden"
-      } absolute top-0 bg-black/10 backdrop-blur-sm`}
+      } fixed top-0 bg-black/10 backdrop-blur-sm`}
     ></div>
   );
 }
