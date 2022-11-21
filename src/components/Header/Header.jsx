@@ -9,7 +9,7 @@ const Header = () => {
 
   return (
     <Fragment>
-      <div className='h-16    bg-white w-[80%] shadow-sm fixed' style={{zIndex:'100'}}>
+      <div className='h-16    bg-white w-[100%] md:w-[100%] lg:w-[80%] shadow-sm fixed' style={{zIndex:'100'}}>
         <div className='h-full w-full px-6  flex items-center'>
           <div className='flex-1  h-full flex items-center justify-between'>
             <div
